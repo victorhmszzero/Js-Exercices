@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-widht, initical scale=1.0">
+        <title>Hora de Codar</title>
+        <script src="Script.js"></script>
+        <script src="Calculators\Rectangle Calculator.JS"></script>
+        <script src="Calculators\Square Calculator.JS"></script>
+        <script src="Calculators\Lozenge Calculator.JS"></script>
+        <script src="Calculators\Trapeze Calculator.JS"></script>
+        <script src="Calculators\Parallelogram Calculator.JS"></script>
+        <script src="Calculators\Triangle Calculator.JS"></script>
+        <script src="Calculators\Circle Calculator.JS"></script>
+    </head>
+    <body>
+        <script>
+            alert("Bem vindo ao exercício Hora de Codar!");
+            alert("by victorhmszzero");
+            function Select_Ex(){
+            var ex1 = "\n  1) Exercício 1 - Criando Variavel";
+            var ex2 = "\n  2) Exercício 2 - Exibir Nome";
+            var ex3 = "\n  3) Exercício 3 - Exibir Nome e Idade";
+            var ex4 = "\n  Exercício 4 - Criando Programas";
+            var ex4_1 = "\n   4) " + title_retangle;
+            var ex4_2 = "\n   5) " + title_square;
+            var ex4_3 = "\n   6) " + title_lozenge;
+            var ex4_4 = "\n   7) " + title_trapeze;
+            var ex4_5 = "\n   8) " + title_parallelogram;
+            var ex4_6 = "\n   9) " + title_triangle;
+            var ex4_7 = "\n  10) " + title_circle;
+            var text_prompt = ex1 + ex2 + ex3 + ex4 + ex4_1 + ex4_2 + ex4_3 + ex4_4 + ex4_5 + ex4_6 + ex4_7;
+            
+            var exercise = parseInt(prompt("Selecione o exercício:" + text_prompt));
+            switch(exercise) {
+                case 1: Ex1(); break;
+                case 2: Ex2(); break;
+                case 3: Ex3_nome(); break;
+                case 4: retangle(); break;
+                case 5: square(); break;
+                case 6: lozenge(); break;
+                case 7: trapeze(); break;
+                case 8: parallelogram(); break; 
+                case 9: triangle(); break;
+                case 10: circle(); break;
+                default:
+                    alert("Selecione um exercício: \nInsira um numero de 1 a 10");
+                    Select_Ex();
+            }
+        }
+        Select_Ex();
+</script>
+    </body>
+</html>
